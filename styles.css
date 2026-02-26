@@ -976,7 +976,60 @@ button {
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
 }
 
+.site-footer {
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
 
+    transition: transform 0.4s ease,
+                box-shadow 0.4s ease,
+                background-color 0.4s ease;
+}
+
+
+.site-footer:hover {
+    background-color: #ffe066; 
+    transform: translateY(-4px);
+    box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.site-footer__text {
+    color: #2b2b2b;
+    font-family: 'Raleway';
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    transition: transform 0.3s ease;
+}
+
+
+.site-footer:hover .site-footer__text {
+    transform: scale(1.05);
+}
+
+.site-footer__links a {
+    color: #2b2b2b;
+    text-decoration: none;
+    margin: 0 15px;
+    font-family: 'Raleway';
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+
+    transition: transform 0.3s ease,
+                background-color 0.3s ease,
+                box-shadow 0.3s ease,
+                color 0.3s ease;
+}
+
+
+.site-footer__links a:hover {
+    background-color: #00aa00;
+    color: #ffffff;
+    transform: translateY(-3px) scale(1.08);
+    box-shadow: 0 6px 18px rgba(0, 170, 0, 0.35);
+}
 
 @media (max-width: 767px) {
 
